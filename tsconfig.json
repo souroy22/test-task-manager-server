@@ -1,14 +1,6 @@
 {
   "compilerOptions": {
-    // "rootDir": "./src",
-    // "moduleResolution": "node",
-    // "baseUrl": "./src",
-    "paths": {
-      "@/*": ["*"]
-    },
     "outDir": "dist",
-    "rootDir": "./src",
-    "baseUrl": "./src",
     "sourceMap": true,
     "target": "ES2020",
     "module": "NodeNext",
@@ -23,12 +15,12 @@
     "noEmit": true,
     "typeRoots": ["./src/types", "./node_modules/@types"]
   },
-  "include": ["./src/**/*"],
-  "exclude": ["build", "node_modules"],
   "ts-node": {
     "esm": false,
     "compilerOptions": {
       "module": "NodeNext"
     }
-  }
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["build", "node_modules"]
 }
