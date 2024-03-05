@@ -9,6 +9,9 @@
     "build": "tsc",
     "lint": "eslint --fix src test"
   },
+  "engines": {
+    "node": "18.x"
+  },
   "keywords": [],
   "author": "Sourav Roy",
   "license": "ISC",
