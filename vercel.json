@@ -3,10 +3,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/src/index.ts"
-    },
-    {
-      "handle": "filesystem"
+      "dest": "/api"
     }
   ],
   "builds": [{ "src": "/src/index.ts", "use": "@vercel/node" }]
